@@ -54,76 +54,74 @@
 \newcounter{money}
 \newcounter{casterlevel}
 
-\newcommand{\charname}{NAME}
-\newcommand{\charrace}{RACE}
-\newcommand{\charclass}{CLASS LVL}
-\newcommand{\charalignment}{F}
-\newcommand{\charsex}{Male}
-\newcommand{\charsize}{Medium}
-\setcounter{sizemod}{0}
-\newcommand{\chartype}{Humanoid (SUBTYPE)}
-\newcommand{\charheight}{10'2``}
+\newcommand{\charname}{Ewiggia}
+\newcommand{\charrace}{Will o wisp}
+\newcommand{\charclass}{Druid 3}
+\newcommand{\charalignment}{NN}
+\newcommand{\charsex}{Female}
+\newcommand{\charsize}{Small}
+\setcounter{sizemod}{-1}
+\newcommand{\chartype}{Aberration (air)}
+\newcommand{\charheight}{2'}
 \newcommand{\charweight}{15.42kg/38lb}
-\newcommand{\charhair}{Black}
-\newcommand{\chareyes}{Red}
-\setcounter{age}{5}
+\newcommand{\charhair}{-}
+\newcommand{\chareyes}{-}
+\setcounter{age}{132}
 
 \setcounter{xp}{0}
-\setcounter{ecl}{1}
+\setcounter{ecl}{7}
 
-\setcounter{totalhp}{21}
-\setcounter{currenthp}{21}
-\newcommand{\speed}{15', 3sq (medium load)}
+\setcounter{initmisc}{4} % Improved Initiative feat
 
-\setcounter{str}{5} % -4
-\setcounter{dex}{12} % 2
-\setcounter{con}{14} % 2
-\setcounter{int}{14} % 5
-\setcounter{wis}{8} % -2
-\setcounter{cha}{20} % 17
+\setcounter{totalhp}{66}
+\setcounter{currenthp}{66}
+\newcommand{\speed}{fly 50' (perfect)}
+
+\setcounter{str}{1} % -4
+\setcounter{dex}{29} % 2
+\setcounter{con}{10} % 2
+\setcounter{int}{15} % 5
+\setcounter{wis}{16} % -2
+\setcounter{cha}{14} % 17
 
 
 \setcounter{acnatural}{0}
-\setcounter{acarmour}{2}
-\setcounter{acmaxdex}{6} %maximum dexterity modifier armour allows. Use a high number for none
+\setcounter{acarmour}{0}
+\setcounter{acmaxdex}{999} %maximum dexterity modifier armour allows. Use a high number for none
+\setcounter{acdeflect}{5}
+\setcounter{acmisc}{1}
 
-\setcounter{basefort}{0}
-\setcounter{baseref}{0}
-\setcounter{basewill}{2}
+\setcounter{basefort}{6}
+\setcounter{baseref}{3}
+\setcounter{basewill}{9}
 \setcounter{resistancesave}{0}
-\setcounter{bab}{1}
+\setcounter{bab}{8}
 \setcounter{spellresistance}{0}
 
 \setcounter{cmdmisc}{\value{acdeflect}}
 
 \newcommand{\feats}{
- Combat Reflexes\\
+Alertness, Blind-Fight, Dodge, Imporved Initiative, Weapon Finesse, Skill Focus (Intimidate), Craft Magical Arms and Armour
 }
 
 \newcommand{\traits}{
-Extremely Fashionable \\
-Patient Optimist (+2 to diplomacy to change attitude of unfriendly or hostile, may retry once) \\
 }
+
 \newcommand{\specialabilities}{
-Low-light vision \\
-1/day dancing lights \\
-1/day ghost sound \\
-1/day prestigitiation \\
-1/day speak with animals \\
-1/day reroll natural 1 on 1d20 \\
-8/day Summon Monster I \\
-Fused Eidolon
-Fused Link
+Darkvision 60', Immunity to Magic, Natural Invisibility, Feed on Fear 
+Nature Bond (Domain: Plant), Nature Sense (+2 Knowledge: Nature, Survival)
+Wild Empathy, Woodland Stride, Trackless Step
 }
 
 \newcommand{\conditionalmods}{
-+2 Vs Enchantment\\
 }
+
 \newcommand{\languages}{
-Common, Kelish, Gnome, Varision \\
+Common, Aklo, Druidic, Sylvan, Elvish
 }
-\setcounter{lightload}{16}
-\setcounter{medload}{33}
+
+\setcounter{lightload}{2}
+\setcounter{medload}{5}
 \setcounter{heavyload}{\value{lightload} + \value{medload}}
 
 \setcounter{money}{0}
@@ -131,26 +129,28 @@ Common, Kelish, Gnome, Varision \\
 \newcommand{\conditionalspellmods}{
 }
 
-\setcounter{casterlevel}{2}
+\setcounter{casterlevel}{3}
 
 \newcommand{\spellsknown}{
 \begin{compactenum}
-\item [1st] \spell{Rejuvinate Eidolon [lesser]}, \spell{Grease}, \spell{Mage Armor}
-\item [0]   \spell{Guidance}, \spell{Detect Magic}, \spell{Mage Hand}, \spell{Message}, \spell{Acid Splash}
+\item [1st] \spell{Obscuring Mist}
+\item [2nd] \spell{Fog Cloud} 
 \end{compactenum}
 }
 
 \newcommand{\domains}{
-None
+Weather
 }
 \newcommand{\notes}{
-0/4 Prestige
+Typical Spell preparation:
+\begin{compactenum}
+\item [0th] \spell{Guidance}, \spell{Stabilise}, \spell{Create Water}, \spell{Detect Magic}
+\item [1st] \spell{Obscuring Mist$^{b}$}, \spell{Cure Light Wounds}, \spell{Entangle}, \spell{Produce Flame}
+\item [2nd] \spell{Fog Cloud$^{b}$}, \spell{Pyrotechnics}, \spell{Summon Swarm}
+\end{compactenum}
 }
 \newcommand{\people}{
 }
-
-
-
 \newcommand{\biography}{
 
 }
